@@ -28,6 +28,13 @@ from .gf_calibration import (
     gf_ramsey_experiment,
     obtain_gf_rabi_params,
 )
+from .jpa_calibration_helper import (
+    JPACalibrationHelper,
+    JPAFrequencyResponse,
+    JPAParameters,
+    JPAPhaseSweepResult,
+    JPASweepResult,
+)
 from .multipartite_entanglement import (
     create_1d_cluster_sequence,
     create_connected_graphs,
@@ -79,6 +86,11 @@ from .thermal_excitation_characterization import (
 )
 
 __all__ = [
+    "JPACalibrationHelper",
+    "JPAFrequencyResponse",
+    "JPAParameters",
+    "JPAPhaseSweepResult",
+    "JPASweepResult",
     "analyze_chevron_matched_transform",
     "calibrate_cr_pi_pulse",
     "calibrate_gf_hpi_pulse",
